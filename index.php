@@ -13,10 +13,11 @@ $varBooleano = 1; //0 //true or false.
 
 //tipos de datos complejos son los simples agrupados. En php pueden ser del mismo tipo o no.
 
-$array = [1,2,3,4, 'hola']; //se usa este actualmente.
+$array = [1,2,3,4, "hola"]; //se usa este actualmente.
 $otroArray = array ();
 
-print_r ($array);// print_r es como eco o var_dump pero para objetos sencillos.
+print_r ($array);// print_r es como eco o var_dump pero para objetos sencillos.Devuelve posicion de cada valor más el valor.
+var_dump($array);// devuelve tipo de dato (string, int... y valor).
 
 
 
