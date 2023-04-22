@@ -1,6 +1,6 @@
 <?php
 
-//*Ciclos: if:
+//*Condición: if:
 //$varUno = 50;
 //$varDos = 5;
 //if ($varUno == $varDos)
