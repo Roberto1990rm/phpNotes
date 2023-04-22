@@ -13,13 +13,26 @@ $varBooleano = 1; //0 //true or false.
 
 //tipos de datos complejos son los simples agrupados. En php pueden ser del mismo tipo o no.
 
-$array = [1,2,3,4, "hola"]; //se usa este actualmente.
-$otroArray = array ();
+$array = [1,2,3,4,"hola"]; //se usa este actualmente.
+$otroArray = array (); //poco uso, versiones pasadas.
 
 print_r ($array);// print_r es como eco o var_dump pero para objetos sencillos.Devuelve posicion de cada valor más el valor.
-var_dump($array);// devuelve tipo de dato (string, int... y valor).
+//var_dump($array);// devuelve tipo de dato (string, int... y valor).
 
+//la diferencia entre var_dump y prinr_r es que con var_dump no puedo asignar el valor; ejmplo, $a = var_dump($array), daría un error. Pero con print_r se podría imprimir e incluso concatenar. Por ejmplo;
+$a = "el valor de print r es -> " . print_r ($array, true);//no es muy utilizado. Se necesita añadir true
+echo $a;
 
+//concatenar en PHP.
+$nombre = "Juan";
+$edad = 25;
+$saludo = " Hola $nombre, tienes $edad años.";
+echo $saludo;
+
+$nombre1 = "Juan";
+$edad1 = 25;
+$saludo1 = "Hola " . $nombre . ", tienes " . $edad . " años.";
+echo $saludo1;
 
 
 
