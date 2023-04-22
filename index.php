@@ -15,9 +15,11 @@ $varDos = 5;
 //elseif ($varUno == 1){
 //   echo "Uno";
 //}
-//elseif ($varUno >= 2){
-//   echo "all number is
-//welcome";
+//elseif ($varUno == 2){
+//   echo "dos";
+//}
+//else {
+    //echo "all number is welcome";
 //}
 //condition: "switch"
 //switch ($varUno) {
@@ -27,9 +29,8 @@ $varDos = 5;
     //case $varUno == 1:
         //echo "uno\n";
         //break;
-    //case $varUno > 1:
-        //echo "all number is welcome";
-        //break;
+        //default: 
+        //echo "otro número \n";
 //}
 
 
