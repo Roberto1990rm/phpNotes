@@ -177,10 +177,7 @@ $i = 0;
 //} 
 
 //FOR CON ARRAY// COUNT y sizeof (los dos son iguales).
-
-
 $arrayDos = ['iphone','samsung','lg','otros'];
-
 //for ($i = 0; $i < count($arrayDos); $i++){
     //echo "en la posición $i está el valor " . $arrayDos[$i] . "\n";
 //}
@@ -196,7 +193,7 @@ $arrayAsociativoNew = [
 ];
 
 foreach ($arrayAsociativoNew as $clave => $valor) {
-    echo "La clave '$clave' tiene el valor '$valor'\n";
+    //echo "La clave '$clave' tiene el valor '$valor'\n";
 }
 
 //string FUNCTIONS.
@@ -212,7 +209,7 @@ $healthy = array("fruits", "vegetables", "fiber");
 $yummy   = array("pizza", "beer", "ice cream");
 
 $newphrase = str_replace ($healthy, $yummy, $phrase);
-echo $newphrase;
+//echo $newphrase;
 
 //no entiendo trim, explode, implode. y todos los que empiezan por str_ son importantes.
 
@@ -225,6 +222,42 @@ function suma($a, $b) {
   
   // Llamando a la función e imprimiendo el resultado
   //echo suma(2, 3); // Output: 5
+
+
+  //function SALUDAR.
+  //function saludar($nombre) {
+    if ($nombre == "") {
+      //echo "Hola, ¿cómo estás?";
+    } else {
+      //echo "¡Hola, " . $nombre . "! ¿Cómo estás?";
+    }
+  //}
+  
+  // Llamando a la función para saludar
+  //saludar("Roberto"); // Output: ¡Hola, Juan! ¿Cómo estás?
+  
+  function saludar($nombre4, $apellido2) {
+    if ($nombre4 == "" && $apellido2 == "") {
+      echo "Hola, ¿cómo estás?";
+    } elseif ($nombre4 == "") {
+      echo "Hola, ¿cómo estás, " . $apellido2 . "?";
+    } elseif ($apellido2 == "") {
+      echo "¡Hola, " . $nombre4 . "! ¿Cómo estás?";
+    } else {
+      echo "¡Hola, " . $nombre4 . " " . $apellido2 . "! ¿Cómo estás?";
+    }
+  }
+  
+  // Llamando a la función para saludar
+  //saludar("Juan", "Pérez"); // Output: ¡Hola, Juan Pérez! ¿Cómo estás?
+
+
+  //functio ADIOS
+function adios ($nombreAdios) {
+    $nombreAdios = "adios $nombreAdios! \n";
+    echo $nombreAdios;
+}
+adios ('roberto');
   
 
 
