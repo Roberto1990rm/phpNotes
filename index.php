@@ -171,20 +171,61 @@ $edad = 18;
 //} //while ($a <= 10);
 
 //ciclo For muy utilizado igual que en JS.
-//$i = 0;
+$i = 0;
 //for ($i=0; $i <= 3 ; $i++) {
     //echo "el número " . $i . " es menor que 3 ";
 //} 
 
-//FOR CON COUNT/ sizeof (los dos son iguales).
+//FOR CON ARRAY// COUNT y sizeof (los dos son iguales).
 
 
 $arrayDos = ['iphone','samsung','lg','otros'];
 
 //for ($i = 0; $i < count($arrayDos); $i++){
-    echo "en la posición $i está el valor " . $arrayDos[$i] . "\n";
+    //echo "en la posición $i está el valor " . $arrayDos[$i] . "\n";
 //}
 
+
+//FOR CON ARRAY asociativo.
+
+$arrayAsociativoNew = [
+    "marca" => 'renault',
+    "modelo" => 'megane',
+    "combustible" => 'diesel',
+    "cv" => '125'
+];
+
+foreach ($arrayAsociativoNew as $clave => $valor) {
+    echo "La clave '$clave' tiene el valor '$valor'\n";
+}
+
+//string FUNCTIONS.
+// Provides: Hll Wrld f PHP
+$vowels = array("a", "e", "i", "o", "u", "A", "E", "I", "O", "U");
+$onlyconsonants = str_replace($vowels, "", "Hello World of PHP");
+//echo $onlyconsonants;
+// Provides: <body text='black'>
+//$bodytag = str_replace("%body%", "black", "<body text='%body%'>");
+
+$phrase  = "You should eat fruits, vegetables, and fiber every day.";
+$healthy = array("fruits", "vegetables", "fiber");
+$yummy   = array("pizza", "beer", "ice cream");
+
+$newphrase = str_replace ($healthy, $yummy, $phrase);
+echo $newphrase;
+
+//no entiendo trim, explode, implode. y todos los que empiezan por str_ son importantes.
+
+//FUNCTION: function + nombrefntion.
+
+function suma($a, $b) {
+    $resultado = $a + $b;
+    return $resultado;
+  }
+  
+  // Llamando a la función e imprimiendo el resultado
+  //echo suma(2, 3); // Output: 5
+  
 
 
 
