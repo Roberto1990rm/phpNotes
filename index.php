@@ -95,8 +95,6 @@ else {
 // & es como and y tiene que cumplir las dos condiciones el if para echo.
 // abreviados. son || y &&, son igual pero cuando obtienen un resultado verdadero no continua evaluando.
 
-
-
 //concatenar en PHP.
 $nombre = "Juan";
 $edad = 25;
@@ -107,7 +105,6 @@ $nombre1 = "Juan";
 $edad1 = 25;
 $saludo1 = "Hola " . $nombre . ", tienes " . $edad . " años.";
 //echo $saludo1;
-
 
 
 //var_dump($varString);
@@ -163,24 +160,30 @@ $edad = 18;
 //echo ($edad < 12) ? "Eres un niño." : 
      //(($edad < 18) ? "Eres adolescente." : "Eres adulto.");
 
-while ($edad <= 21) {
+//while ($edad <= 21) {
     //echo "vas por el número " . $edad++ . "\n";
-};
+//};
 
 //Tenemos también el do while. Diferencia, el while comprueba primero y do while al final. Se utiliza poco.
 
-do {
+//do {
     # code...
-} while ($a <= 10);
+//} //while ($a <= 10);
 
 //ciclo For muy utilizado igual que en JS.
-$i = 0;
+//$i = 0;
+//for ($i=0; $i <= 3 ; $i++) {
+    //echo "el número " . $i . " es menor que 3 ";
+//} 
 
-for ($i = 0; $i <= 3; $i++) {
-    echo "voy por el número " . $i . "\n";
-}
+//FOR CON COUNT/ sizeof (los dos son iguales).
 
 
+$arrayDos = ['iphone','samsung','lg','otros'];
+
+//for ($i = 0; $i < count($arrayDos); $i++){
+    echo "en la posición $i está el valor " . $arrayDos[$i] . "\n";
+//}
 
 
 
