@@ -24,7 +24,29 @@ $array = [1,2,3,4,"hola"]; //se usa este actualmente.
 //echo $a;
 //Concatenación con Var_dump
 $array = [1, 2, 3, 4, "hola"];
-echo "El valor de var_dump es: " . var_dump($array); //averiguar porque devuelve primero array y depsues "el valor de ..."
+//echo "El valor de var_dump es: " . var_dump($array); //averiguar porque devuelve primero array y depsues "el valor de ..."
+
+//Tenemos tb las CONTANTES y van siempre en mayúsculas. No pueden volver a utilizarse.
+
+const VALOR = 123;
+define ('OTRA_CONSTANTE', 567);
+//echo OTRA_CONSTANTE;
+//echo ("el valor es " . VALOR . "\n");
+
+//ARRAYS bidimensionales: no pueden hacerse con php.
+
+//ARRAYS  asociativo.  conjunto de claves y valor. Por ejemplo, coches.
+
+$arrayAsociativo = [
+    "Marca" => 'Renault',
+    "Modelo" => 'Megane',
+    "Combustible" => 'Diesel',
+    "Año" => '1990'
+];
+$arrayAsociativo["Combustible"] = 'Gasolina';
+
+var_dump($arrayAsociativo);
+
 
 //concatenar en PHP.
 $nombre = "Juan";
