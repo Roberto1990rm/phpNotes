@@ -1,7 +1,7 @@
 <?php
 
 //Variables: siempre empiezan con $_ "$_var" o $+letra "$varUno". 
-$varUno = 2;
+$varUno = 6;
 $varDos = $varUno + 3;
 $varString = "hola -> $varDos";
 
@@ -36,16 +36,65 @@ define ('OTRA_CONSTANTE', 567);
 //ARRAYS bidimensionales: no pueden hacerse con php.
 
 //ARRAYS  asociativo.  conjunto de claves y valor. Por ejemplo, coches.
-
 $arrayAsociativo = [
     "Marca" => 'Renault',
     "Modelo" => 'Megane',
     "Combustible" => 'Diesel',
     "Año" => '1990'
 ];
-$arrayAsociativo["Combustible"] = 'Gasolina';
+//$arrayAsociativo["Combustible"] = 'Gasolina';
+//var_dump($arrayAsociativo);
 
-var_dump($arrayAsociativo);
+
+//operaciones. Modulo: modulo y resto es lo mismo. Por ejemplo:
+$vasModulo = ($varUno % 5);
+//echo $vasModulo;
+
+//operaciones. Exponente de: //poco uso//
+
+$vasPotencia = ($varUno ** 3);
+//echo $vasPotencia;
+
+
+//operaciones. Raíz cuadrada. Ejemplo:  //poco uso//
+
+$varRaizCuadrada = ($varUno ** (1/2) );
+$varRaizCubica = (27 ** (1/3));
+//echo "la raíz cuadrada de 6 es " . $varRaizCuadrada . "\n";
+//echo "la raíz cúbica de 27 es " . $varRaizCubica . "\n";
+//operadores lógicos y comparación. Lo explica después de IF.
+
+if ($varUno == $varDos) {
+    //echo "el valor de varUno es igual al valor de varDos ";
+} else 
+{
+    //echo "el valor de varUno es diferente al valor de varDos ";
+}
+
+//Operadores
+
+$var1 = 1;
+$var2 = "1";
+
+if ($var1 === $var2){
+    //echo "var1 es igual que var2\n";
+}
+else {
+    //echo "var1 es distinto a var2\n";
+} 
+//devolverá que los dos son iguales aunque uno es int y otro string. Para comparar tipo de dato y no solo el valor ===.
+
+//operacion compleja:
+if (!($var1 === $var2)| ($var1 == 1)){
+    echo "Operacion compleja OR\n";
+}
+else {
+    //echo "var1 es distinto a var2\n";
+}  
+// | es como el or. | con este se cumple una de las condiciones.
+// & es como and y tiene que cumplir las dos condiciones el if para echo.
+// abreviados. son || y &&, son igual pero cuando obtienen un resultado verdadero no continua evaluando.
+
 
 
 //concatenar en PHP.
