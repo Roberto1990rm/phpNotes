@@ -86,7 +86,7 @@ else {
 
 //operacion compleja:
 if (!($var1 === $var2)| ($var1 == 1)){
-    echo "Operacion compleja OR\n";
+    //echo "Operacion compleja OR\n";
 }
 else {
     //echo "var1 es distinto a var2\n";
@@ -163,13 +163,22 @@ $edad = 18;
 //echo ($edad < 12) ? "Eres un niño." : 
      //(($edad < 18) ? "Eres adolescente." : "Eres adulto.");
 
+while ($edad <= 21) {
+    //echo "vas por el número " . $edad++ . "\n";
+};
 
+//Tenemos también el do while. Diferencia, el while comprueba primero y do while al final. Se utiliza poco.
 
+do {
+    # code...
+} while ($a <= 10);
 
+//ciclo For muy utilizado igual que en JS.
+$i = 0;
 
-
-
-
+for ($i = 0; $i <= 3; $i++) {
+    echo "voy por el número " . $i . "\n";
+}
 
 
 
