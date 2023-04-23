@@ -257,7 +257,7 @@ function adios ($nombreAdios) {
     $nombreAdios = "adios $nombreAdios! \n";
     echo $nombreAdios;
 }
-adios ('roberto');
+//adios ('roberto');
   
 
 
